@@ -89,17 +89,6 @@ function App() {
         </h2>
         <div className="mt-3 h-1.5 w-60 rounded-full bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
 
-        <div className="mt-10 w-full rounded-2xl border border-purple-500/30 bg-white/5 px-6 py-8 text-center backdrop-blur-sm">
-          <h3 className="text-2xl font-black italic leading-tight text-yellow-300">Seu bônus está esperando!</h3>
-          <ul className="mt-5 flex flex-col gap-2">
-            {bonusLines.map((line) => (
-              <li key={line} className="text-base font-semibold text-zinc-100">
-                {line}
-              </li>
-            ))}
-          </ul>
-        </div>
-
         <a
           href={CADASTRO_URL}
           target="_blank"
@@ -118,6 +107,17 @@ function App() {
             aria-hidden="true"
           />
         </a>
+
+        <div className="mt-8 w-full rounded-2xl border border-purple-500/30 bg-white/5 px-6 py-8 text-center backdrop-blur-sm">
+          <h3 className="text-2xl font-black italic leading-tight text-yellow-300">Seu bônus está esperando!</h3>
+          <ul className="mt-5 flex flex-col gap-2">
+            {bonusLines.map((line) => (
+              <li key={line} className="text-base font-semibold text-zinc-100">
+                {line}
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <p className="mt-8 text-center text-xs text-zinc-400">18+ | Jogue com responsabilidade.</p>
       </main>
